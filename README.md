@@ -76,3 +76,4 @@
 - リィちゃん (Lii)
 - ソラハちゃん (Soraha)
 - まめふれんず (MameFriends)
+- えも研素体 (EMOLab)
