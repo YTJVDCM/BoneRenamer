@@ -3206,8 +3206,8 @@
 		<RightUpperLeg>UpperLeg.R</RightUpperLeg>
 		<LeftLowerLeg>LowerLeg.L</LeftLowerLeg>
 		<RightLowerLeg>LowerLeg.R</RightLowerLeg>
-		<LeftFoot>foot_L</LeftFoot>
-		<RightFoot>foot_R</RightFoot>
+		<LeftFoot>foot.L</LeftFoot>
+		<RightFoot>foot.R</RightFoot>
 		<Spine>Spine</Spine>
 		<Chest>Chest</Chest>
 		<Neck>Neck</Neck>
@@ -3229,7 +3229,7 @@
 		<LeftThumbIntermediate>ThumbIntermediate.L</LeftThumbIntermediate>
 		<LeftThumbDistal>ThumbDistal.L</LeftThumbDistal>
 		<LeftIndexProximal>IndexInterProxima.L</LeftIndexProximal>
-		<LeftIndexIntermediate>Index_Intermediate.L</LeftIndexIntermediate>
+		<LeftIndexIntermediate>IndexIntermediate.L</LeftIndexIntermediate>
 		<LeftIndexDistal>IndexDistal.L</LeftIndexDistal>
 		<LeftMiddleProximal>MiddleProxima.L</LeftMiddleProximal>
 		<LeftMiddleIntermediate>MiddleIntermediate.L</LeftMiddleIntermediate>
@@ -3265,5 +3265,4 @@
 		<LeftBreastMid>NONE</LeftBreastMid>
 		<LeftBreastEnd>NONE</LeftBreastEnd>
 	</avater>
-
 </Avaters>
