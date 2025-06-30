@@ -3081,7 +3081,7 @@
 		<LeftUpperArm>upperarm_L</LeftUpperArm>
 		<RightUpperArm>upperarm_R</RightUpperArm>
 		<LeftLowerArm>lowerarm_L</LeftLowerArm>
-		<RightLowerArm>lowerArm_R</RightLowerArm>
+		<RightLowerArm>lowerarm_R</RightLowerArm>
 		<LeftHand>hand_L</LeftHand>
 		<RightHand>hand_R</RightHand>
 		<LeftToes>toe_L</LeftToes>
@@ -3240,14 +3240,14 @@
 		<LeftLittleProximal>LittleProxima.L</LeftLittleProximal>
 		<LeftLittleIntermediate>LittleIntermediate.L</LeftLittleIntermediate>
 		<LeftLittleDistal>LittleDistal.L</LeftLittleDistal>
-        <RightThumbProximal>ThumbProximal.R</RightThumbProximal>
-        <RightThumbIntermediate>ThumbIntermediate.R</RightThumbIntermediate>
-        <RightThumbDistal>ThumbDistal.R</RightThumbDistal>
+		<RightThumbProximal>ThumbProximal.R</RightThumbProximal>
+		<RightThumbIntermediate>ThumbIntermediate.R</RightThumbIntermediate>
+		<RightThumbDistal>ThumbDistal.R</RightThumbDistal>
 		<RightIndexProximal>IndexInterProxima.R</RightIndexProximal>
 		<RightIndexIntermediate>IndexIntermediate.R</RightIndexIntermediate>
 		<RightIndexDistal>IndexDistal.R</RightIndexDistal>
 		<RightMiddleProximal>MiddleProxima.R</RightMiddleProximal>
-        <RightMiddleIntermediate>MiddleIntermediate.R</RightMiddleIntermediate>
+		<RightMiddleIntermediate>MiddleIntermediate.R</RightMiddleIntermediate>
 		<RightMiddleDistal>MiddleDistal.R</RightMiddleDistal>
 		<RightRingProximal>RingProxima.R</RightRingProximal>
 		<RightRingIntermediate>RingIntermediate.R</RightRingIntermediate>
@@ -3308,14 +3308,14 @@
 		<LeftLittleProximal>LittleProximal.L</LeftLittleProximal>
 		<LeftLittleIntermediate>LittleIntermediate.L</LeftLittleIntermediate>
 		<LeftLittleDistal>LittleDistal.L</LeftLittleDistal>
-        <RightThumbProximal>ThumbProximal.R</RightThumbProximal>
-        <RightThumbIntermediate>ThumbIntermediate.R</RightThumbIntermediate>
-        <RightThumbDistal>ThumbDistal.R</RightThumbDistal>
+		<RightThumbProximal>ThumbProximal.R</RightThumbProximal>
+		<RightThumbIntermediate>ThumbIntermediate.R</RightThumbIntermediate>
+		<RightThumbDistal>ThumbDistal.R</RightThumbDistal>
         <RightIndexProximal>IndexProximal.R</RightIndexProximal>
 		<RightIndexIntermediate>IndexIntermediate.R</RightIndexIntermediate>
 		<RightIndexDistal>IndexDistal.R</RightIndexDistal>
 		<RightMiddleProximal>MiddleProximalR</RightMiddleProximal>
-        <RightMiddleIntermediate>MiddleIntermediate.R</RightMiddleIntermediate>
+		<RightMiddleIntermediate>MiddleIntermediate.R</RightMiddleIntermediate>
 		<RightMiddleDistal>MiddleDistal.R</RightMiddleDistal>
 		<RightRingProximal>RingProximal.R</RightRingProximal>
 		<RightRingIntermediate>RingIntermediate.R</RightRingIntermediate>
