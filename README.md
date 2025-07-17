@@ -78,4 +78,5 @@
 - まめふれんず (MameFriends)
 - えも研素体 (EMOLab)
 - 九尾の傍観者ちゃん (9b3d)
+- キッシュちゃん (Quiche)
 
