@@ -1,0 +1,67 @@
+﻿<!-- シエルちゃん かすみん提供 -->
+<Avatar>
+    <NAME>Ciel</NAME>
+    <Hips>Hips</Hips>
+    <LeftUpperLeg>Left Upper Leg</LeftUpperLeg>
+    <RightUpperLeg>Right Upper Leg</RightUpperLeg>
+    <LeftLowerLeg>Left Lower Leg</LeftLowerLeg>
+    <RightLowerLeg>Right Lower Leg</RightLowerLeg>
+    <LeftFoot>Left Foot</LeftFoot>
+    <RightFoot>Right Foot</RightFoot>
+    <Spine>Spine</Spine>
+    <Chest>Chest</Chest>
+    <Neck>Neck</Neck>
+    <Head>Head</Head>
+    <LeftShoulder>Left Shoulder</LeftShoulder>
+    <RightShoulder>Right Shoulder</RightShoulder>
+    <LeftUpperArm>Left Upper Arm</LeftUpperArm>
+    <RightUpperArm>Right Upper Arm</RightUpperArm>
+    <LeftLowerArm>Left Lower Arm</LeftLowerArm>
+    <RightLowerArm>Right Lower Arm</RightLowerArm>
+    <LeftHand>Left Hand</LeftHand>
+    <RightHand>Right Hand</RightHand>
+    <LeftToes>NONE</LeftToes>
+    <RightToes>NONE</RightToes>
+    <LeftEye>Left Eye</LeftEye>
+    <RightEye>Right Eye</RightEye>
+    <Jaw>NONE</Jaw>
+    <LeftThumbProximal>Left Thumb Proximal</LeftThumbProximal>
+    <LeftThumbIntermediate>Left Thumb Intermediate</LeftThumbIntermediate>
+    <LeftThumbDistal>Left Thumb Distal</LeftThumbDistal>
+    <LeftIndexProximal>Left Index Proximal</LeftIndexProximal>
+    <LeftIndexIntermediate>Left Index Intermediate</LeftIndexIntermediate>
+    <LeftIndexDistal>Left Index Distal</LeftIndexDistal>
+    <LeftMiddleProximal>Left Middle Proximal</LeftMiddleProximal>
+    <LeftMiddleIntermediate>Left Middle Intermediate</LeftMiddleIntermediate>
+    <LeftMiddleDistal>Left Middle Distal</LeftMiddleDistal>
+    <LeftRingProximal>Left Ring Proximal</LeftRingProximal>
+    <LeftRingIntermediate>Left Ring Intermediate</LeftRingIntermediate>
+    <LeftRingDistal>Left Ring Distal</LeftRingDistal>
+    <LeftLittleProximal>Left Little Proximal</LeftLittleProximal>
+    <LeftLittleIntermediate>Left Little Intermediate</LeftLittleIntermediate>
+    <LeftLittleDistal>Left Little Distal</LeftLittleDistal>
+    <RightThumbProximal>Right Thumb Proximal</RightThumbProximal>
+    <RightThumbIntermediate>Right Thumb Intermediate</RightThumbIntermediate>
+    <RightThumbDistal>Right Thumb Distal</RightThumbDistal>
+    <RightIndexProximal>Right Index Proximal</RightIndexProximal>
+    <RightIndexIntermediate>Right Index Intermediate</RightIndexIntermediate>
+    <RightIndexDistal>Right Index Distal</RightIndexDistal>
+    <RightMiddleProximal>Right Middle Proximal</RightMiddleProximal>
+    <RightMiddleIntermediate>Right Middle Intermediate</RightMiddleIntermediate>
+    <RightMiddleDistal>Right Middle Distal</RightMiddleDistal>
+    <RightRingProximal>Right Ring Proximal</RightRingProximal>
+    <RightRingIntermediate>Right Ring Intermediate</RightRingIntermediate>
+    <RightRingDistal>Right Ring Distal</RightRingDistal>
+    <RightLittleProximal>Right Little Proximal</RightLittleProximal>
+    <RightLittleIntermediate>Right Little Intermediate</RightLittleIntermediate>
+    <RightLittleDistal>Right Little Distal</RightLittleDistal>
+    <UpperChest>NONE</UpperChest>
+    <LastBone>NONE</LastBone>
+    ------Options------
+    <RightBreastRoot>Right Breast1</RightBreastRoot>
+    <RightBreastMid>Right Breast2</RightBreastMid>
+    <RightBreastEnd>Right Breast2_end</RightBreastEnd>
+    <LeftBreastRoot>Left Breast1</LeftBreastRoot>
+    <LeftBreastMid>Left Breast2</LeftBreastMid>
+    <LeftBreastEnd>Left Breast2_end</LeftBreastEnd>
+</Avatar>
