@@ -140,7 +140,7 @@ namespace AvaterInfo
 
                     avatarBoneData[avatarName] = boneMap;
 
-                    Debug.Log($"読み込み成功: {avatarName}（{boneMap.Count}個のボーン）");
+                    //Debug.Log($"読み込み成功: {avatarName}（{boneMap.Count}個のボーン）");
                 }
                 catch (System.Exception ex)
                 {
@@ -155,7 +155,6 @@ namespace AvaterInfo
         /// </summary>
         public string[] GetAvaterNames()
         {
-            LoadXML();
             return avatarBoneData.Keys.ToArray();
         }
 
@@ -164,7 +163,6 @@ namespace AvaterInfo
         /// </summary>
         public string[] GetBoneNameFromKey(keys key)
         {
-            LoadXML();
             string keyName = key.ToString();
             List<string> results = new List<string>();
 
@@ -184,7 +182,6 @@ namespace AvaterInfo
         }
         public Dictionary<string, string> GetBoneMapByAvatarName(string avatarName)
         {
-            LoadXML();
             if (avatarBoneData.TryGetValue(avatarName, out var map))
             {
                 return map;

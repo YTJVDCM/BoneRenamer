@@ -1,5 +1,5 @@
 ﻿<!-- ライムちゃん -->
-<avater>
+<Avatar>
     <NAME>Lime</NAME>
     <Hips>Hips</Hips>
     <LeftUpperLeg>UpperLeg.L</LeftUpperLeg>
@@ -64,4 +64,4 @@
     <LeftBreastRoot>Breast_L.001</LeftBreastRoot>
     <LeftBreastMid>Breast_L.002</LeftBreastMid>
     <LeftBreastEnd>Breast_L.002_end</LeftBreastEnd>
-</avater>
+</Avatar>

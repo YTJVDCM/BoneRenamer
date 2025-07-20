@@ -25,19 +25,36 @@ public class BoneRenamer : EditorWindow
     private void OnGUI()
     {
         if (xml == null)
+        {
             xml = new XMLLoader();
+        }
+        xml.LoadXML();
+
+        GUILayout.Label("ボーン名リネームツール", EditorStyles.boldLabel);
 
         GUILayout.Label("ボーン名を変更したいオブジェクトを指定");
         TargetObj = (GameObject)EditorGUILayout.ObjectField("GameObject", TargetObj, typeof(GameObject), true);
 
-        if (GUILayout.Button("アバター辞書を再読み込み"))
+        using (new EditorGUILayout.VerticalScope("Box"))
         {
-            xml.LoadXML();
-            ResultMessage = "再読み込み完了";
-            Debug.Log("再読み込み完了");
+            using (new EditorGUILayout.HorizontalScope())
+            {
+                GUILayout.Label("アバター辞書");
+                if (GUILayout.Button("辞書を再読み込み"))
+                {
+                    xml.LoadXML();
+                    ResultMessage = "再読み込み完了";
+                    Debug.Log("再読み込み完了");
+                }
+            };
+            using (new EditorGUILayout.HorizontalScope())
+            {
+                GUILayout.Label("アバター辞書の読み込み状態: " + (xml.GetAvaterNames().Length) + "件読み込み完了。");
+            }
         }
-
-        GUILayout.Space(5);
+        
+        GUILayout.Space(10);
+        
         string[] avaterNames = xml.GetAvaterNames();
         GUILayout.Label("変更先のアバター名");
 
@@ -45,9 +62,14 @@ public class BoneRenamer : EditorWindow
         {
             SelectIndex = EditorGUILayout.Popup(SelectIndex, avaterNames);
         }
-
+        GUILayout.Space(10);
+        
+        EditorGUILayout.HelpBox("ボーン名の置換を行います。\n" +
+                                "アバター名を選択し、対象のオブジェクトを指定して適用ボタンを押してください。\n" +
+                                "先頭一致でリネームを有効にすると、ボーン名の先頭が一致する場合に置換が行われます。\n" +
+                                "注意: この処理は元に戻せませんので、事前にバックアップを取ってください。", MessageType.Info);
         SelectUseStartWith = GUILayout.Toggle(SelectUseStartWith, "先頭一致でリネーム");
-
+        GUILayout.Space(5);
         if (GUILayout.Button("適用"))
         {
             int matchCount = 0;
@@ -79,48 +101,60 @@ public class BoneRenamer : EditorWindow
             Debug.LogError("選択されたアバターに対応するボーンデータが見つかりません: " + avatarKey);
             return false;
         }
-
+        
         Transform children = obj.GetComponentInChildren<Transform>();
-        if (children.childCount == 0)
-        {
+        
+        if (children.childCount == 0) {
             return false;
         }
-
         foreach (Transform ob in children)
         {
             string tName = ob.gameObject.name;
-
-            foreach (var kv in boneMap)
+            foreach (XMLLoader.keys key in Enum.GetValues(typeof(XMLLoader.keys))) 
             {
-                string boneKey = kv.Key;
-                string boneName = kv.Value;
+                string[] bones = xml.GetBoneNameFromKey(key);
 
-                if (!SelectUseStartWith)
+                //先頭一致非使用
+                if(! SelectUseStartWith)
                 {
-                    if (tName == boneName)
+                    for (int i = 0; i < bones.Length; i++)
                     {
-                        Debug.Log($"置換: {tName} → {boneName}");
-                        ob.gameObject.name = boneName;
-                        matchCount++;
-                        break;
+                        //Debug.Log("検索:" +tName + "/ "+ bones[i]);
+                        if (tName == bones[i])
+                        {
+                            Debug.Log("置換:" + tName + " -> " + bones[SelectIndex]);
+                            ob.gameObject.name = bones[SelectIndex];
+                            matchCount++;
+                            break;
+                        }
                     }
                 }
+                //先頭一致使用
                 else
                 {
-                    if (tName.StartsWith(boneName) && tName != boneName)
+                    string rep = "";
+                    for (int i = 0; i < bones.Length; i++)
                     {
-                        Debug.Log($"置換: {tName}（StartsWith: {boneName}）→ {boneName + tName.Substring(boneName.Length)}");
-                        ob.gameObject.name = boneName + tName.Substring(boneName.Length);
+                        if (tName.Equals(bones[SelectIndex]))
+                            continue;
+                        //Debug.Log("検索:" +tName + "/ "+ bones[i]);
+                        if (tName.StartsWith(bones[i]))
+                        {
+                            //Debug.Log("合致:" + tName + " / " + bones[i]);
+                            if (rep.Length <= bones[i].Length)  
+                                rep = bones[i];
+                        }
+                    }
+                    if(!rep.Equals(""))
+                    {
+                        Debug.Log("置換：" + tName+ " : " + rep + " -> " + bones[SelectIndex]);
                         matchCount++;
-                        break;
+                        ob.gameObject.name = tName.Replace(rep, bones[SelectIndex]);
                     }
                 }
             }
-
-            // 再帰処理
             BoneRenameProcess(ob.gameObject, avatarKey, ref matchCount);
         }
-
         return true;
     }
 
